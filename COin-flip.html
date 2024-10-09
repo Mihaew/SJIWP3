@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KVOncin</title>
+  <style>
+    p {
+      font-size: 300px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    button {
+      width: 750px;
+      height: 75px;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="
+                tvojIzbor('glava');
+            ">Glava</button>
+
+  <button onclick="
+            tvojIzbor('pismo');
+        ">Pismo</button>
+
+  <p class="js-slikica"></p>
+  <p class="js-result"></p>
+  <script>
+    function baciKovanicu() {
+      const randomBroj = Math.random();
+      if (randomBroj < 0.5) {
+        document.querySelector('.js-slikica').innerHTML = 'GLAVA';
+        return 'glava';
+      } else {
+        document.querySelector('.js-slikica').innerHTML = 'PISMO';
+        return 'pismo';
+      }
+    }
+    function tvojIzbor(tvojIzabir) {
+      let result = baciKovanicu();
+      if (tvojIzabir === result) {
+        gameResult = 'You win';
+      } if (tvojIzabir !== result) {
+        gameResult = 'You lose'
+      }
+      document.querySelector('.js-result').innerHTML = `${gameResult}`;
+    }
+  </script>
+</body>
+
+</html>
