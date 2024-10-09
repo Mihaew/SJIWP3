@@ -4,11 +4,91 @@
 <head>
   <meta charset="UTF-8">
   <title>Moja druga stranica</title>
+  <style>
+    .vrsta1{
+      background-color: coral;
+      padding: 2px;
+      margin: 2px;
+      text-decoration: none;
+    }
+
+    .vrsta1:hover{
+      border: 3px solid rgb(241, 41, 19);
+    }
+
+    .vrsta2{
+      margin: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: chocolate;
+      font-weight: 700;
+    }
+
+    li{
+      margin: 10px;
+    }
+
+    .uzrecica{
+      font-size: 40px;
+      font-family: cursive;
+      margin-left: 50px;
+      padding: 10px;
+      border-left: 5px solid royalblue;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .uzrecica:hover{
+      background-color: royalblue;
+      color: white;
+    }
+
+    table,th,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th{
+      background-color: rgb(220, 150, 220);
+    }
+
+    td{
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Dobro došli na moju drugu stranicu</h1>
-  <h1>Dobro došli na moju drugu stranicu</h1>
+  <ul>
+    <li><a class="vrsta1" href="www.google.com">Google</a></li>
+    <li><a class="vrsta2" href="www.bing.com">Bing</a></li>
+    <li><a class="vrsta1" href="www.duckduckgo.com">DuckDuckGo</a></li>
+  </ul>
+
+  <div class="uzrecica">
+    Riba ribi grize rep.
+  </div>
+
+  <table>
+    <tr>
+      <th>Ponedjeljak</th>
+      <th>Utorak</th>
+      <th>Srijeda</th>
+    </tr>
+
+    <tr>
+      <td>Mat</td>
+      <td>Pov</td>
+      <td>Bio</td>
+    </tr>
+  
+    <tr>
+      <td>HJ</td>
+      <td>TZK</td>
+      <td>SJIWP</td>
+    </tr>
+  </table>
 </body>
 
 </html>
